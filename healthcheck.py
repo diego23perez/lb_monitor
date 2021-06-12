@@ -11,7 +11,7 @@ flag_withdraw = True
 
 
 def is_alive(url):
-    """ This function will check if the Load Balancer is already working as expected
+    """ This function will check if the Load Balancer is already working as expected, otherwise it will send another command
  
     url (str): An IP address or FQDN of a host
         returns (bool): True if alive, False if not
