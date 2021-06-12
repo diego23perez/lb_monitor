@@ -5,13 +5,13 @@ import requests
 from requests.exceptions import Timeout
 from sys import stdout
 from time import sleep
-flag_announce = False
-flag_withdraw = False
+flag_announce = True
+flag_withdraw = True
 
 
 
 def is_alive(url):
-    """ This function will check if the Load Balancer is already working as expected
+    """ This function will check if the Load Balancer is already working as expected, otherwise it will send another command
  
     url (str): An IP address or FQDN of a host
         returns (bool): True if alive, False if not
